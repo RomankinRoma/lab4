@@ -21,7 +21,6 @@ public class Main {
         User student=userFactory.createStudent(6,"sadasd",true);
         User pupil=userFactory.createPupil(5,"sadasd");
         Book book = bookFactory.createBook(new BookForChildrenFactory("ada", 312, BookGenre.STUDY, "asdsdsa"), BookGenre.COMEDY);
-        System.out.println(book.showInfo());
         student.borrow(book);
         Singleton singleton=Singleton.getInstance(library);
 
