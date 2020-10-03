@@ -48,25 +48,13 @@ public class Main {
                     library.addBook();
                     break;
                 case 2:
-                    try {
-                        library.addBookToUser();
-                    }catch (Exception e){
-                        System.out.println("Incorrect id or title!");;
-                    }
+                    library.addBookToUser();
                     break;
                 case 3:
-                    try {
-                        library.deleteBook();
-                    }catch (Exception e){
-                        System.out.println("Incorrect title!");;
-                    }
+                    library.deleteBook();
                     break;
                 case 4:
-                    try {
-                        library.deleteBookFromUser();
-                    }catch (Exception e){
-                        System.out.println("Incorrect id or title!");;
-                    }
+                    library.deleteBookFromUser();
                     break;
                 case 5:
                     library.createUser();
@@ -78,11 +66,7 @@ public class Main {
                     library.allUsers();
                     break;
                 case 8:
-                    try {
-                        library.userBooks();
-                    }catch (Exception e){
-                        System.out.println("Incorrect id!");;
-                    }
+                    library.userBooks();
                     break;
                 case 0:
                     System.exit(-1);
